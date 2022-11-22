@@ -1,4 +1,7 @@
 //obteniendo datos de la memoria
+
+console.log("hola")
+
 let peliculaConsultadaEnMemoria=JSON.parse(localStorage.getItem("pelicula"))
 console.log(peliculaConsultadaEnMemoria)
 
@@ -14,3 +17,7 @@ etiquetaDuracion.textContent=peliculaConsultadaEnMemoria.duracion
 
 let etiquetaSinopsis=document.getElementById("sinopsisPelicula")
 etiquetaSinopsis.textContent=peliculaConsultadaEnMemoria.sinopsis
+
+let etiquetaBanner=document.getElementById("bannerPelicula")
+console.log(peliculaConsultadaEnMemoria.banner)
+etiquetaBanner.src=peliculaConsultadaEnMemoria.banner
